@@ -43,7 +43,7 @@ void bfs(char start) {
 
 int main() {
     cout << "Starting from vertex A:\n";
-    bfs('A'); // Start from A
+    bfs('A'); 
     return 0;
 }
 ```
