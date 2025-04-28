@@ -22,7 +22,7 @@ map<char, vector<char>> adj = {
 void bfs(char start) {
     map<char, bool> group;
     queue<char> q;
-    visited[start] = true;
+    group[start] = true;
     q.push(start);
 
     cout << "BFS Traversal: ";
