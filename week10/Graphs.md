@@ -20,7 +20,7 @@ map<char, vector<char>> adj = {
 
 // Breadth-First Search (BFS)
 void bfs(char start) {
-    map<char, bool> visited;
+    map<char, bool> group;
     queue<char> q;
     visited[start] = true;
     q.push(start);
@@ -32,8 +32,8 @@ void bfs(char start) {
         cout << v << " ";
 
         for (char u : adj[v]) {
-            if (!visited[u]) {
-                visited[u] = true;
+            if (!group[u]) {
+                group[u] = true;
                 q.push(u);
             }
         }
