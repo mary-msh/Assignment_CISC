@@ -47,3 +47,5 @@ int main() {
     return 0;
 }
 ```
+
+Both BFS and DFS have same big O notation : O(vertex, edges) 
