@@ -25,7 +25,7 @@ void bfs(char start) {
     group[start] = true;
     q.push(start);
 
-    cout << "BFS Traversal: ";
+    cout << "BFS: ";
     while (!q.empty()) {
         char v = q.front();
         q.pop();
