@@ -52,8 +52,5 @@ int main() {
     std::cout << "Missing example1: " << findMissingNumber(example1) << std::endl;
     std::cout << "Missing example2: " << findMissingNumber(example2) << std::endl;
 
-    return 0;
-}
-
-
+    return 0;}
 ```
