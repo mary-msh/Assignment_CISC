@@ -26,3 +26,34 @@ vector<Player> findDualSportPlayers(vector<Player> basketball_players, vector<Pl
     return result;
 }
 ```
+
+#Task2
+```cpp
+#include <iostream>
+#include <vector>
+
+int findMissingNumber(const std::vector<int>& nums) {
+    int n = nums.size(); 
+    int expectedSum = (n * (n + 1)) / 2;
+    
+    int actualSum = 0;
+    for (int num : nums) {
+        actualSum += num;
+    }
+
+    return expectedSum - actualSum;
+}
+
+
+int main() {
+    std::vector<int> example1 = {2, 3, 0, 6, 1, 5};  
+    std::vector<int> example2 = {8, 2, 3, 9, 4, 7, 5, 0, 6}; 
+
+    std::cout << "Missing example1: " << findMissingNumber(example1) << std::endl;
+    std::cout << "Missing example2: " << findMissingNumber(example2) << std::endl;
+
+    return 0;
+}
+
+
+```
